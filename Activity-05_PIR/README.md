@@ -17,7 +17,7 @@ To detect the movement of a person or object using a PIR sensor and Arduino.
 
 The PIR sensor circuit was designed and simulated using Tinkercad.
 
-![PIR Sensor Circuit](circuit.png)
+circuit5.png
 
 ## 4. Arduino Program
 
