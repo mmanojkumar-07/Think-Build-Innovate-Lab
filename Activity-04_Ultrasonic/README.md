@@ -1,21 +1,21 @@
-Activity 04 – Ultrasonic Sensor
-Objective
+## Activity 04 – Ultrasonic Sensor
+## Objective
 
 To measure the distance of an object using an ultrasonic sensor and Arduino by transmitting and receiving ultrasonic waves.
 
-Components Used :
+## Components Used :
 
 Arduino UNO
 HC-SR04 Ultrasonic Sensor
 Breadboard
 Jumper Wires
-Circuit Diagram:
+## Circuit Diagram:
 
 The ultrasonic sensor circuit was designed and simulated using Tinkercad.
 
 See circuits.png.
 
-Arduino Program :
+## Arduino Program :
 
 const int trigPin = 9;
 const int echoPin = 10;
@@ -60,35 +60,35 @@ void loop()
   delay(500);
 }
 
-Output :
+## Output :
 
 The ultrasonic sensor measures the distance between the sensor and the object. The measured distance is displayed in centimeters through the Serial Monitor.
 
-Example:
+## Example:
 
 Distance: 25 cm
 Distance: 24 cm
 Distance: 26 cm
 
-Learning Outcome :
+## Learning Outcome :
 Understood the working principle of an ultrasonic sensor.
 Learned how to use the trigPin and echoPin.
 Learned how to generate an ultrasonic pulse using digitalWrite().
 Learned how to measure the echo duration using pulseIn().
 Learned how to calculate distance using the ultrasonic sensor.
 
-Challenges Faced :
+## Challenges Faced :
 Checked the Trig and Echo pin connections.
 Verified the sensor power and ground connections.
 Corrected the sensor pin configuration in the Arduino program.
 Tested the sensor with objects at different distances.
 
-Real-World Applications :
+## Real-World Applications :
 Obstacle detection
 Parking assistance systems
 Automatic doors
 Distance measurement systems
 
-Connection to Your PoC:
+## Connection to Your PoC:
 
 The ultrasonic sensor can be used for distance or obstacle detection in the proposed project, helping the system identify nearby objects and take appropriate actions.
