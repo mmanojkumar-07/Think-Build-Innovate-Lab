@@ -1,31 +1,25 @@
-const int sensorPin = A0;
+int pot = A0;
+int led = 5;
 
-const int redLED = 13;
-const int greenLED = 12;
-
-void setup() {
-  pinMode(redLED, OUTPUT);
-  pinMode(greenLED, OUTPUT);
-
-  Serial.begin(9600);
+void setup()
+{
+  pinMode(led, OUTPUT);
 }
 
-void loop() {
-  int moisture = analogRead(sensorPin);
+void loop()
+{
+  int value = analogRead(pot);
 
-  Serial.print("Moisture Value: ");
-  Serial.println(moisture);
-
-  if (moisture > 500) {
-    // Dry soil
-    digitalWrite(redLED, HIGH);
-    digitalWrite(greenLED, LOW);
+  if (value < 300)
+  {
+    analogWrite(led, 50);
   }
-  else {
-    // Wet soil
-    digitalWrite(redLED, LOW);
-    digitalWrite(greenLED, HIGH);
+  else if (value < 700)
+  {
+    analogWrite(led, 150);
   }
-
-  delay(500);
+  else
+  {
+    analogWrite(led, 255);
+  }
 }
