@@ -1,4 +1,3 @@
-
 Activity 06 – Soil Moisture Sensor
 Objective
 
