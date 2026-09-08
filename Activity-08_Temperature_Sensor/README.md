@@ -107,4 +107,4 @@ Industrial temperature monitoring
 Electronic safety systems
 9. Connection to Your PoC
 
-The temperature sensor can be used to monitor environmental temperature in the proposed project. The LED indicators provide a simple visual alert for low, medium, and high temperature conditions, helping the system take appropriate actions based on the measured temperature.
+The temperature sensor can be used to monitor environmental temperature in the proposed project. The LED indicators provide a simple visual alert for low, medium, and high temperature conditions, helping the system take appropriate actions based on the measured temperature.lping the system take appropriate actions based on the measured temperature.
