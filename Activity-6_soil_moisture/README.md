@@ -12,8 +12,6 @@ To monitor soil moisture levels using a soil moisture sensor and provide visual 
 - Breadboard[span_6](start_span)[span_6](end_span)
 - Jumper Wires[span_7](start_span)[span_7](end_span)
 
-## 3. Circuit Diagram
-![Circuit Diagram](circuit2.png.jpeg)
 
 ## 4. Arduino Program (`code.ino`)
 ```cpp
