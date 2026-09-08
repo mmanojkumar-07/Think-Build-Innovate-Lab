@@ -6,24 +6,24 @@ To detect the movement of a person or object using a PIR sensor and Arduino.
 
 ## 2. Components Used
 
-- Arduino UNO
-- PIR Motion Sensor
-- LED
-- 220 Ω Resistor
-- Breadboard
-- Jumper Wires
+1. Arduino UNO
+2. PIR Motion Sensor
+3. LED
+4. 220 Ω Resistor
+5. Breadboard
+6. Jumper Wires
 
 ## 3. Circuit Diagram
 
 The PIR sensor circuit was designed and simulated using Tinkercad.
 
-circuit5.png
+**Circuit Diagram:** `circuit5.png`
 
 ## 4. Arduino Program
 
-# The Arduino program is stored in the file `code.ino`.
+The Arduino program is stored in the file `code.ino`.
 
-
+```cpp
 int pirPin = 2;
 int ledPin = 13;
 
@@ -52,32 +52,45 @@ void loop()
 
   delay(500);
 }
+```
+
 ## 5. Output
 
-When motion is detected by the PIR sensor, the LED turns ON and the Serial Monitor displays "Motion Detected". When there is no motion, the LED remains OFF and the Serial Monitor displays "No Motion".
+When motion is detected by the PIR sensor, the LED turns **ON** and the Serial Monitor displays **"Motion Detected"**.
 
-6. Learning Outcome
+When there is no motion, the LED remains **OFF** and the Serial Monitor displays **"No Motion"**.
 
-Understood the working principle of a PIR motion sensor.
-Learned how to use digitalRead().
-Learned how to control an LED using digitalWrite().
-Learned how to interface a PIR sensor with Arduino.
-Understood motion detection using Arduino.
+### Example Output
 
-7. Challenges Faced
+```text
+Motion Detected
+Motion Detected
+No Motion
+No Motion
+```
 
-Checked the PIR sensor connections.
-Verified the power and ground connections.
-Corrected the PIR sensor input pin configuration.
-Tested the sensor by detecting movement.
+## 6. Learning Outcome
 
-8. Real-World Applications
+* Understood the working principle of a PIR motion sensor.
+* Learned how to use `digitalRead()`.
+* Learned how to control an LED using `digitalWrite()`.
+* Learned how to interface a PIR sensor with Arduino.
+* Understood motion detection using Arduino.
 
-Automatic lighting systems
-Security alarm systems
-Motion detection systems
-Smart home automation
+## 7. Challenges Faced
 
-9. Connection to Your PoC
+* Checked the PIR sensor connections.
+* Verified the power and ground connections.
+* Corrected the PIR sensor input pin configuration.
+* Tested the sensor by detecting movement.
+
+## 8. Real-World Applications
+
+* Automatic lighting systems
+* Security alarm systems
+* Motion detection systems
+* Smart home automation
+
+## 9. Connection to Your PoC
 
 The PIR sensor can be used to detect human presence or movement and trigger specific actions in the proposed project.
